@@ -2,6 +2,7 @@ package com.example.khalid.profileapplication;
 
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
      // The {@link ViewPager} that will host the section contents.
      //
     private ViewPager mViewPager;
-    //private TableLayout mTabLayout;
+    private TabLayout mTabLayout;
 
 
     @Override
@@ -72,15 +73,65 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
-        mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
+        //mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
         //tab id
-        //mTabLayout=(TabLayout)findViewById(R.id.tabs);
+        mTabLayout=(TabLayout)findViewById(R.id.tabs);
 
+        //add the tabs
+        mTabLayout.addTab(mTabLayout.newTab().setText("Tab0"));
+        mTabLayout.addTab(mTabLayout.newTab().setText("Tab1"));
+        mTabLayout.addTab(mTabLayout.newTab().setText("Tab2"));
+        mTabLayout.addTab(mTabLayout.newTab().setText("Tab3"));
+        mTabLayout.addTab(mTabLayout.newTab().setText("Tab4"));
+        mTabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
-        mViewPager.setAdapter(mSectionsPagerAdapter);
+        //mViewPager.setAdapter(mSectionsPagerAdapter);
+
+        Pager adapter = new Pager(getSupportFragmentManager(),mTabLayout.getTabCount());
+
+        mViewPager.setAdapter(adapter);
+
+        mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                mTabLayout.setScrollPosition(position,0,true);
+                mTabLayout.setSelected(true);
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+
+        //TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        //tabLayout.setupWithViewPager(mViewPager);
+
+        mTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                mViewPager.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+
     }
 
 
