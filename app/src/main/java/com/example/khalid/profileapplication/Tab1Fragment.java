@@ -37,22 +37,35 @@ public class Tab1Fragment extends Fragment {
     {
 
         Job j1=new Job("Rogers");
-        j1.description.add("Wayne Rooney");
-        j1.description.add("Van Persie");
-        j1.description.add("Ander Herera");
-        j1.description.add("Juan Mata");
+        j1.description.add("Rotation 1: Production Support (June 2017 - October 2017)");
+        j1.description.add("Rotation 2: Business Systems Analyst (October 2017 - February 2018)");
+        j1.description.add("Rotation 3: IT Security (February 2018 - March 2018)");
+        j1.description.add("Rotation 4: Developer (March 2018 - June 2018)");
 
         Job j2=new Job("N8 Identity");
-        j2.description.add("Aaron Ramsey");
-        j2.description.add("Mesut Ozil");
-        j2.description.add("Jack Wilshere");
-        j2.description.add("Alexis Sanchez");
+        j2.description.add("• Tackled complex IAM scenarios by developing Logical Attribute Handlers (LAH) and Business Logic Task Handlers (BLTH) in Java");
+        j2.description.add("• Implemented IIS websites attaching Identity and Access Management (IAM) solutions such as CA Single Sign-On");
+        j2.description.add("• Analyzed and created XML, SOAP, HTML scripts as well as LDAP and SQL queries");
+        j2.description.add("• Promptly resolved hundreds of Network and Security incidents, actively assisting Production Support daily");
+        j2.description.add("• Created and maintained Incidents and Change Requests (CRQ) for all environments");
+        j2.description.add("• Generated VM servers (Windows Server 2012) linking them via AD, SQL, DNS and DHCP to administer CA softwares");
+        j2.description.add("• Enforced domain security to and from external companys by testing IP configuration and firewall connectivity");
+        j2.description.add("");
+        j2.description.add("Project: AD Harmonization (April 2017 - May 2017)");
+        j2.description.add("• Flawlessly implemented and documented changes to CA Technology Suite files, data, and software to allow the ability to migrate accounts to and from two merged companies");
+        j2.description.add("• Meticulously performed FUT and UAT for SIT, QA, and Production environment changes");
+        j2.description.add("• Efficiently bulk loaded thousands of accounts while adding and maintaining access, authorization, and authentication to applications and websites");
 
         Job j3=new Job("Ford");
-        j3.description.add("John Terry");
-        j3.description.add("Eden Hazard");
-        j3.description.add("Diego Costa");
-        j3.description.add("Oscar");
+        j3.description.add("• Extensively tested internal websites by creating automation scripts and test cases in HP UFT (formerly HP QTP)");
+        j3.description.add("• Identified, analyzed, documented, and resolved hundreds of defects saving millions of dollars");
+        j3.description.add("• Counselled coworkers with automation help; providing them with viable solutions to their problems");
+        j3.description.add("• Effectively trained an intern to test, develop and document MS Access Applications and Scripts");
+        j3.description.add("• Achieved working experience with the Agile Software Development method");
+        j3.description.add("");
+        j3.description.add("Relevant Project: Incentives Database");
+        j3.description.add("• Developed a MS Access application for five managers that retrieved and manipulated incentive records from java-based web applications in a user-friendly GUI effectively reducing manager workload from days to minutes");
+        j3.description.add("• Optimized VB/.NET functions and SQL statements to efficiently retrieve, store, and delete data");
 
         ArrayList<Job> allJobs=new ArrayList<Job>();
         allJobs.add(j1);

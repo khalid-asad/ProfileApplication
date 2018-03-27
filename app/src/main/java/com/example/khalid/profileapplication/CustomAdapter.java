@@ -42,7 +42,7 @@ public class CustomAdapter extends BaseExpandableListAdapter {
         return 0;
     }
 
-    //GET PLAYER ROW
+    // get description row
     @Override
     public View getChildView(int groupPos, int childPos, boolean isLastChild, View convertView,
                              ViewGroup parent) {
@@ -119,16 +119,17 @@ public class CustomAdapter extends BaseExpandableListAdapter {
         {
             img.setImageResource(R.drawable.rogers);
             img.getBackground().setAlpha(0);
+            nameTv.setText("IT New Grad");
         }else if(name=="N8 Identity")
         {
             img.setImageResource(R.drawable.n8identity);
-            //img.setBackgroundColor(Color.parseColor("#80000000"));
             img.getBackground().setAlpha(0);
+            nameTv.setText("Solutions Engineer");
         }else if(name=="Ford")
         {
             img.setImageResource(R.drawable.ford);
-            //img.setBackgroundColor(Color.parseColor("#80000000"));
             img.getBackground().setAlpha(0);
+            nameTv.setText("QA Analyst Intern");
         }
 
         // set job row background colour
