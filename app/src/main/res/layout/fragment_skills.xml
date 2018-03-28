@@ -37,33 +37,266 @@
         app:layout_constraintVertical_bias="0.48" />
 
     <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-    android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
 
         <LinearLayout
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:orientation="vertical">
-            <ImageView
-                android:id="@+id/imageViewJava"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:adjustViewBounds="true"
-                android:cropToPadding="false"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/J" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+            <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+                android:layout_margin="17dp"
+            android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageViewJava"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/j" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="10dp"
-                android:fontFamily="sans-serif-condensed"
-                android:gravity="center"
-                android:text="Java"
-                android:textColor="#000000"
-                android:textSize="10dp"
-                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="Java"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="17dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageViewPython"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/p" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="Python"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="17dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageViewC"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/c" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="C"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="17dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageViewEmbedded"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/e" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="Embedded"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="17dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageViewXML"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/x" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="XML"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="17dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageViewCPlus"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/c" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="C++"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="17dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageViewJavaScript"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/j" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="JavaScript"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="17dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageViewIAM"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/i" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="IAM"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="17dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageViewSQL"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/s" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="SQL"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="17dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageViewAutomation"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/a" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="Automation"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
