@@ -1,6 +1,7 @@
 <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,46 +9,14 @@
     tools:context="com.example.khalid.profileapplication.MainActivity$PlaceholderFragment">
 
     <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:adjustViewBounds="true"
-        android:cropToPadding="false"
-        android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mainpic" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed"
-        android:gravity="center"
-        android:text="Education"
-        android:textColor="#000000"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48" />
-
-    <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="100dp"
         android:adjustViewBounds="true"
         android:cropToPadding="false"
         android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mcmasteruniversitylogomaroon" />
+        android:layout_margin="20dp"
+        app:srcCompat="@drawable/mcmasteruniversitylogo2" />
 
     <TextView
         android:layout_width="match_parent"
@@ -57,36 +26,54 @@
         android:text="Bachelors of Engineering, Computer"
         android:textColor="#000000"
         android:textSize="24dp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48" />
-    <LinearLayout
+        android:textStyle="normal" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="17dp"
-        android:orientation="horizontal">
-        <ImageView
-            android:id="@+id/imageViewCapstone"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_vertical"
-            android:adjustViewBounds="true"
-            android:cropToPadding="false"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/capstone" />
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="14dp"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/imageView1"
-            android:text="A special award was offered from McMaster's W. Booth School of Engineering Practice recognizing innovation and entrepreneurial merit - a group prize of $500 cash, and each member was offered a free application to any of the WBSEP master's degree programs in Engineering Design, Engineering Entrepreneurship and Innovation, or Engineering and Public Policy.  The winners were the “Eye Tracking (EOG)” group - Khalid Asad, Danishbir Gill, Bhautik Gandhi, and Vishal Kharker."
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:contentPadding="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="17dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Capstone: Eye-tracking (EOG)"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/imageViewCapstone"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/capstone" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:text="A special award was offered from McMaster's W. Booth School of Engineering Practice recognizing innovation and entrepreneurial merit &#xA;$500 cash and a free application to any of the WBSEP master's degree programs &#xA;&#xA;Khalid Asad, Danishbir Gill, Bhautik Gandhi, and Vishal Kharker."
+                android:textSize="12dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
 </LinearLayout>

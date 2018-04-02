@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         // Remove notification bar
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_main);
 
@@ -79,11 +79,11 @@ public class MainActivity extends AppCompatActivity {
         mTabLayout=(TabLayout)findViewById(R.id.tabs);
 
         //add the tabs
-        mTabLayout.addTab(mTabLayout.newTab().setText("Tab0"));
-        mTabLayout.addTab(mTabLayout.newTab().setText("Tab1"));
-        mTabLayout.addTab(mTabLayout.newTab().setText("Tab2"));
-        mTabLayout.addTab(mTabLayout.newTab().setText("Tab3"));
-        mTabLayout.addTab(mTabLayout.newTab().setText("Tab4"));
+        mTabLayout.addTab(mTabLayout.newTab().setText("Home"));
+        mTabLayout.addTab(mTabLayout.newTab().setText("Experience"));
+        mTabLayout.addTab(mTabLayout.newTab().setText("Education"));
+        mTabLayout.addTab(mTabLayout.newTab().setText("Projects"));
+        mTabLayout.addTab(mTabLayout.newTab().setText("Skills"));
         mTabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         // Set up the ViewPager with the sections adapter.
