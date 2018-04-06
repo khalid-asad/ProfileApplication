@@ -10,46 +10,42 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
-    <!-- A CardView that contains a TextView -->
     <android.support.v7.widget.CardView
         android:id="@+id/card_view_duckhunt"
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="10dp"
         card_view:cardCornerRadius="8dp"
         card_view:contentPadding="10dp">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Duck Hunt (Java)"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp" />
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
                 android:src="@drawable/duckhuntjava" />
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:text="Duck Hunt (Java)"
-                    android:textColor="#000"
-                    android:textSize="18sp" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="hello"
-                    android:textColor="#555" />
-            </LinearLayout>
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="• Independently designed the classic game “Duck Hunt” fully in Java via Object-oriented design&#xA;• Varied speeds and number of ducks through keys and implemented level progression"
+                android:textColor="#555" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
@@ -58,37 +54,35 @@
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="10dp"
         card_view:cardCornerRadius="8dp"
         card_view:contentPadding="10dp">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="Robot World (C++)"
+                android:textColor="#000"
+                android:textSize="18sp" />
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
                 android:src="@drawable/robotworldcplus" />
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:text="Robot World (C++)"
-                    android:textColor="#000"
-                    android:textSize="18sp" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="hello"
-                    android:textColor="#555" />
-            </LinearLayout>
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="• Developed efficient software in C++ to simulate multiple robots in a virtual world while avoiding collisions and moving in various methods (90%)&#xA;• Implemented using Object-Oriented programming via Unix Operating Systems"
+                android:textColor="#555" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
@@ -97,37 +91,35 @@
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="10dp"
         card_view:cardCornerRadius="8dp"
         card_view:contentPadding="10dp">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="Socket Programming Chat Database (C++/Python)"
+                android:textColor="#000"
+                android:textSize="18sp" />
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
                 android:src="@drawable/socketprogrammingchat" />
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:text="Socket Programming Chat Database (C++/Python)"
-                    android:textColor="#000"
-                    android:textSize="18sp" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="hello"
-                    android:textColor="#555" />
-            </LinearLayout>
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="• Directed a team of Engineers to implement a multi-threaded file-sharing database in C/Python&#xA;• Utilised TCP and UDP sockets to transfer files and messages between client and server&#xA;• Implemented Multicast to form new groups of users that can communicate data privately"
+                android:textColor="#555" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
@@ -136,37 +128,35 @@
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="10dp"
         card_view:cardCornerRadius="8dp"
         card_view:contentPadding="10dp">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="Image Interpolation and Filtering (Matlab)"
+                android:textColor="#000"
+                android:textSize="18sp" />
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
                 android:src="@drawable/imageinterpolationmatlab" />
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:text="Image Interpolation (Matlab)"
-                    android:textColor="#000"
-                    android:textSize="18sp" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="hello"
-                    android:textColor="#555" />
-            </LinearLayout>
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="• Implemented Bicubic Interpolation to effectively up-sample and down-sample images MATLAB&#xA;• Produced functions that applied contrast, brightness, saturation, and sharpness filters onto images"
+                android:textColor="#555" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
@@ -175,37 +165,36 @@
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="10dp"
         card_view:cardCornerRadius="8dp"
         card_view:contentPadding="10dp">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="FPGA Image Decompression (System Verilog/VHDL)"
+                android:textColor="#000"
+                android:textSize="18sp" />
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
                 android:src="@drawable/imagedecompressionfpga" />
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:text="FPGA Image Decompression (System Verilog/VHDL)"
-                    android:textColor="#000"
-                    android:textSize="18sp" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="hello"
-                    android:textColor="#555" />
-            </LinearLayout>
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="•	Worked effectively in a team of two to design and implement an Image De-compressor according to the McMaster Image Compression (.mic7) specification&#xA;• Programmed the Altera DE2 board (Cyclone II) via Quartus II in System Verilog&#xA;• Completed all three milestones of decompression in an memory efficient manner (100%)&#xA;• Performed various decompression methods such as Colour-space Conversion, Interpolation, Inverse Signal Transform, De-quantization and Lossless Decoding&#xA;•	Enhanced efficient time management and the ability to tackle massive projects by breaking them down through the use of state tables and finite state machines
+"
+                android:textColor="#555" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
@@ -214,37 +203,35 @@
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="10dp"
         card_view:cardCornerRadius="8dp"
         card_view:contentPadding="10dp">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="File and Folder Viewer (C)"
+                android:textColor="#000"
+                android:textSize="18sp" />
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
                 android:src="@drawable/fileandfolderviewer" />
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:text="File and Folder Viewer (C)"
-                    android:textColor="#000"
-                    android:textSize="18sp" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="hello"
-                    android:textColor="#555" />
-            </LinearLayout>
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="hello"
+                android:textColor="#555" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
@@ -253,37 +240,35 @@
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="10dp"
         card_view:cardCornerRadius="8dp"
         card_view:contentPadding="10dp">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/multithreadedshearsort" />
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:text="Multi-Threaded Shear Sort (C)"
-                    android:textColor="#000"
-                    android:textSize="18sp" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="hello"
-                    android:textColor="#555" />
-            </LinearLayout>
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="Multi-Threaded Shear Sort (C)"
+                android:textColor="#000"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/multithreadedshearsort" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="hello"
+                android:textColor="#555" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
@@ -292,37 +277,35 @@
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="10dp"
         card_view:cardCornerRadius="8dp"
         card_view:contentPadding="10dp">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/recursivefibonaccimips" />
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:text="Recursive Fibonacci (Assembly)"
-                    android:textColor="#000"
-                    android:textSize="18sp" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="hello"
-                    android:textColor="#555" />
-            </LinearLayout>
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="Recursive Fibonacci (Assembly)"
+                android:textColor="#000"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/recursivefibonaccimips" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="hello"
+                android:textColor="#555" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
 </LinearLayout>
