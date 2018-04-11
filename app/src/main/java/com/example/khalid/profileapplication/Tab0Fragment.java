@@ -1,5 +1,7 @@
 package com.example.khalid.profileapplication;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -39,7 +41,9 @@ public class Tab0Fragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Toast.makeText(getActivity(), "GitHub Clicked", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getActivity(), "GitHub Clicked", Toast.LENGTH_LONG).show();
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.github.com/xeroyzenith"));
+                startActivity(browserIntent);
             }
         });
 
@@ -48,7 +52,9 @@ public class Tab0Fragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Toast.makeText(getActivity(), "LinkedIn Clicked", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getActivity(), "LinkedIn Clicked", Toast.LENGTH_LONG).show();
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/khalidasad"));
+                startActivity(browserIntent);
             }
         });
 
@@ -57,7 +63,8 @@ public class Tab0Fragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Toast.makeText(getActivity(), "Website Clicked", Toast.LENGTH_LONG).show();
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.khalidasad93.wixsite.com/khalidasad"));
+                startActivity(browserIntent);
             }
         });
 
@@ -66,7 +73,9 @@ public class Tab0Fragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Toast.makeText(getActivity(), "Email Clicked", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getActivity(), "Email Clicked", Toast.LENGTH_LONG).show();
+                Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto","khalidasad93@gmail.com", null));
+                startActivity(emailIntent);
             }
         });
 
@@ -75,7 +84,9 @@ public class Tab0Fragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Toast.makeText(getActivity(), "Google Play Clicked", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getActivity(), "Google Play Clicked", Toast.LENGTH_LONG).show()
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/dev?id=7067594522563633074"));
+                startActivity(browserIntent);
             }
         });
 
@@ -84,7 +95,9 @@ public class Tab0Fragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Toast.makeText(getActivity(), "Changelog Clicked", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getActivity(), "Changelog Clicked", Toast.LENGTH_LONG).show();
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/xeroyzenith/ProfileApplication/commits/master"));
+                startActivity(browserIntent);
             }
         });
 
@@ -93,7 +106,9 @@ public class Tab0Fragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Toast.makeText(getActivity(), "Feedback Clicked", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getActivity(), "Feedback Clicked", Toast.LENGTH_LONG).show();
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/khalidasad/detail/recommendation/write/"));
+                startActivity(browserIntent);
             }
         });
 
@@ -102,7 +117,9 @@ public class Tab0Fragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Toast.makeText(getActivity(), "Star Clicked", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getActivity(), "Star Clicked", Toast.LENGTH_LONG).show();
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/dev?id=7067594522563633074"));
+                startActivity(browserIntent);
             }
         });
 
@@ -111,7 +128,9 @@ public class Tab0Fragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Toast.makeText(getActivity(), "Donate Clicked", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getActivity(), "Donate Clicked", Toast.LENGTH_LONG).show();
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.paypal.me/KhalidAsad"));
+                startActivity(browserIntent);
             }
         });
 
