@@ -38,9 +38,20 @@ public class Tab1Fragment extends Fragment {
 
         Job j1=new Job("Rogers");
         j1.description.add("Rotation 1: Production Support (June 2017 - October 2017)");
+        j1.description.add("• Automated the strenuous verification and hourly updating of IT application statuses for 5 systems effectively during the critical days period saving 10,000 hours of overtime for 3 teams");
+        j1.description.add("• Aptly reduced an IT application's daily health check operation time from 30 minutes to 2.5 through automation using Python-based SikuliX");
+        j1.description.add("• Developed an automated provisioning tool for an IT application that improved efficiency by 98%");
+        j1.description.add("• Intuitively designed a PowerShell script to retrieve employee fields via Employee IDs bypassing LDAP restrictions");
+        j1.description.add("");
         j1.description.add("Rotation 2: Business Systems Analyst (October 2017 - February 2018)");
+        j1.description.add("• Built a DDD, running PCR, use cases and SDS draft in a project that generated $0.5 million monthly");
+        j1.description.add("• Automated Actuals vs. Forecasting costs for a massive mandatory project saving 8 hours a week");
+        j1.description.add("");
         j1.description.add("Rotation 3: IT Security (February 2018 - March 2018)");
-        j1.description.add("Rotation 4: Developer (March 2018 - June 2018)");
+        j1.description.add("• Extensively researched Governance, Risk, and Compliance and participated in the first stage of Vendor Selection Process");
+        j1.description.add("");
+        j1.description.add("Rotation 4: Web Developer (March 2018 - June 2018)");
+        j1.description.add("• Increased the performance by 10% of a handful of broadcast websites running on WordPress by performing upgrades, introducing new plugins, and optimizing PHP and CSS code");
 
         Job j2=new Job("N8 Identity");
         j2.description.add("• Tackled complex IAM scenarios by developing Logical Attribute Handlers (LAH) and Business Logic Task Handlers (BLTH) in Java");
@@ -61,7 +72,7 @@ public class Tab1Fragment extends Fragment {
         j3.description.add("• Identified, analyzed, documented, and resolved hundreds of defects saving millions of dollars");
         j3.description.add("• Counselled coworkers with automation help; providing them with viable solutions to their problems");
         j3.description.add("• Effectively trained an intern to test, develop and document MS Access Applications and Scripts");
-        j3.description.add("• Achieved working experience with the Agile Software Development method");
+        j3.description.add("• Augmented efficiency through daily scrums following the Agile Software Development method");
         j3.description.add("");
         j3.description.add("Relevant Project: Incentives Database");
         j3.description.add("• Developed a MS Access application for five managers that retrieved and manipulated incentive records from java-based web applications in a user-friendly GUI effectively reducing manager workload from days to minutes");
