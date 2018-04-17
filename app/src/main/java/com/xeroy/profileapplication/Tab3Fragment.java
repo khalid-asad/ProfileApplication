@@ -1,4 +1,4 @@
-package com.example.khalid.profileapplication;
+package com.xeroy.profileapplication;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,6 +6,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.xeroy.profileapplication.R;
 
 /**
  * Created by Khalid on 2018-03-22.

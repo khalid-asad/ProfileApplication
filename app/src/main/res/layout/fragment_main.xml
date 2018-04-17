@@ -7,7 +7,7 @@
     android:layout_margin="20dp"
     android:shrinkColumns="*"
     android:stretchColumns="*"
-    tools:context="com.example.khalid.profileapplication.MainActivity$PlaceholderFragment">
+    tools:context="com.xeroy.profileapplication.MainActivity$PlaceholderFragment">
 
     <TableRow
         android:layout_height="wrap_content"

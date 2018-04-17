@@ -1,4 +1,4 @@
-package com.example.khalid.profileapplication;
+package com.xeroy.profileapplication;
 
 import java.util.ArrayList;
 

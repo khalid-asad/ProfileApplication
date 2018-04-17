@@ -1,4 +1,4 @@
-package com.example.khalid.profileapplication;
+package com.xeroy.profileapplication;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.xeroy.profileapplication.R;
 
 public class GridViewAdapter extends BaseAdapter{
     String [] result;

@@ -1,4 +1,4 @@
-package com.example.khalid.profileapplication;
+package com.xeroy.profileapplication;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

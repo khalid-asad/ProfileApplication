@@ -5,7 +5,7 @@
     android:id="@+id/scrollLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.khalid.profileapplication.MainActivity$PlaceholderFragment">
+    tools:context="com.xeroy.profileapplication.MainActivity$PlaceholderFragment">
 <LinearLayout
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"

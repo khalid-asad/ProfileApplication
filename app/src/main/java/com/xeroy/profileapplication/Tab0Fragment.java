@@ -1,4 +1,4 @@
-package com.example.khalid.profileapplication;
+package com.xeroy.profileapplication;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.xeroy.profileapplication.R;
 
 /**
  * Created by Khalid on 2018-03-22.
